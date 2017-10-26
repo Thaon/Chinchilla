@@ -6,7 +6,7 @@
 class Window
 {
 private:
-	std::shared_ptr<SDL_Window> m_window; //holds pointer to out window
+	std::shared_ptr<SDL_Window> m_window; //holds pointer to our window
 	SDL_GLContext m_context;
 	int m_width;
 	int m_height;

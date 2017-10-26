@@ -9,6 +9,7 @@ Game::Game()
 
 Game::~Game()
 {
+	std::cout << "Game ended." << std::endl;
 }
 
 Game::Game(std::string name, int width, int height)
@@ -24,6 +25,8 @@ void Game::Run()
 		Update();
 		Draw();
 	}
+
+	std::cout << "Game ended." << std::endl;
 }
 
 void Game::Init()

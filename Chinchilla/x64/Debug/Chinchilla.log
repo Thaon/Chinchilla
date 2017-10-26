@@ -1,6 +1,4 @@
 ﻿  Window.cpp
-c:\users\gabri\onedrive\documents\github\chinchilla\chinchilla\window.cpp(16): warning C4150: deletion of pointer to incomplete type 'SDL_Window'; no destructor called
-  c:\users\gabri\onedrive\documents\github\chinchilla\chinchilla\externalres\include\sdl2\sdl_video.h(89): note: see declaration of 'SDL_Window'
 c:\program files (x86)\microsoft visual studio 14.0\vc\include\memory(655): warning C4150: deletion of pointer to incomplete type 'SDL_Window'; no destructor called
   c:\users\gabri\onedrive\documents\github\chinchilla\chinchilla\externalres\include\sdl2\sdl_video.h(89): note: see declaration of 'SDL_Window'
   c:\program files (x86)\microsoft visual studio 14.0\vc\include\memory(451): note: see reference to function template instantiation 'void std::shared_ptr<SDL_Window>::_Resetp<_Ux>(_Ux *)' being compiled
