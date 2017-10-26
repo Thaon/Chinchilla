@@ -13,6 +13,7 @@ Window::Window()
 
 Window::~Window()
 {
+	//don't need to delete m_window because of the use of smart pointers
 }
 
 Window::Window(int w, int h)

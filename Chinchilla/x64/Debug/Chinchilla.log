@@ -1,0 +1,49 @@
+﻿  Window.cpp
+c:\users\gabri\onedrive\documents\github\chinchilla\chinchilla\window.cpp(16): warning C4150: deletion of pointer to incomplete type 'SDL_Window'; no destructor called
+  c:\users\gabri\onedrive\documents\github\chinchilla\chinchilla\externalres\include\sdl2\sdl_video.h(89): note: see declaration of 'SDL_Window'
+c:\program files (x86)\microsoft visual studio 14.0\vc\include\memory(655): warning C4150: deletion of pointer to incomplete type 'SDL_Window'; no destructor called
+  c:\users\gabri\onedrive\documents\github\chinchilla\chinchilla\externalres\include\sdl2\sdl_video.h(89): note: see declaration of 'SDL_Window'
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\memory(451): note: see reference to function template instantiation 'void std::shared_ptr<SDL_Window>::_Resetp<_Ux>(_Ux *)' being compiled
+          with
+          [
+              _Ux=SDL_Window
+          ]
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\memory(451): note: see reference to function template instantiation 'void std::shared_ptr<SDL_Window>::_Resetp<_Ux>(_Ux *)' being compiled
+          with
+          [
+              _Ux=SDL_Window
+          ]
+  c:\users\gabri\onedrive\documents\github\chinchilla\chinchilla\window.cpp(34): note: see reference to function template instantiation 'std::shared_ptr<SDL_Window>::shared_ptr<SDL_Window>(_Ux *)' being compiled
+          with
+          [
+              _Ux=SDL_Window
+          ]
+  c:\users\gabri\onedrive\documents\github\chinchilla\chinchilla\window.cpp(34): note: see reference to function template instantiation 'std::shared_ptr<SDL_Window>::shared_ptr<SDL_Window>(_Ux *)' being compiled
+          with
+          [
+              _Ux=SDL_Window
+          ]
+c:\program files (x86)\microsoft visual studio 14.0\vc\include\memory(153): warning C4150: deletion of pointer to incomplete type 'SDL_Window'; no destructor called
+  c:\users\gabri\onedrive\documents\github\chinchilla\chinchilla\externalres\include\sdl2\sdl_video.h(89): note: see declaration of 'SDL_Window'
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\memory(152): note: while compiling class template member function 'void std::_Ref_count<_Ux>::_Destroy(void) noexcept'
+          with
+          [
+              _Ux=SDL_Window
+          ]
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\memory(653): note: see reference to class template instantiation 'std::_Ref_count<_Ux>' being compiled
+          with
+          [
+              _Ux=SDL_Window
+          ]
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\memory(451): note: see reference to function template instantiation 'void std::shared_ptr<SDL_Window>::_Resetp<_Ux>(_Ux *)' being compiled
+          with
+          [
+              _Ux=SDL_Window
+          ]
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\memory(451): note: see reference to function template instantiation 'void std::shared_ptr<SDL_Window>::_Resetp<_Ux>(_Ux *)' being compiled
+          with
+          [
+              _Ux=SDL_Window
+          ]
+  Chinchilla.vcxproj -> C:\Users\gabri\OneDrive\Documents\GitHub\Chinchilla\Chinchilla\x64\Debug\Chinchilla.exe
+  Chinchilla.vcxproj -> C:\Users\gabri\OneDrive\Documents\GitHub\Chinchilla\Chinchilla\x64\Debug\Chinchilla.pdb (Partial PDB)

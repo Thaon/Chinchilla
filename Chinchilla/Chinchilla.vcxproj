@@ -68,13 +68,32 @@
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
-  <PropertyGroup />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>./ExternalRes/Include/assimp;./ExternalRes/Include/glm;./ExternalRes/Include/glew;./ExternalRes/Include/SOIL;./ExternalRes/Include/SDL2;$(IncludePath)</IncludePath>
+    <LibraryPath>./ExternalRes/Lib/glew;./ExternalRes/Lib/assimp;./ExternalRes/Lib/SDL2;./ExternalRes/Lib/SOIL;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IncludePath>../ExternalRes/Include/assimp;../ExternalRes/Include/glm;../ExternalRes/Include/glew;../ExternalRes/Include/SOIL;../ExternalRes/Include/SDL2;$(IncludePath)</IncludePath>
+    <LibraryPath>../ExternalRes/Lib/glew;../ExternalRes/Lib/assimp;../ExternalRes/Lib/SDL2;../ExternalRes/Lib/SOIL;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>./ExternalRes/Include/assimp;./ExternalRes/Include/glm;./ExternalRes/Include/glew;./ExternalRes/Include/SOIL;./ExternalRes/Include/SDL2;$(IncludePath)</IncludePath>
+    <LibraryPath>./ExternalRes/Lib/glew;./ExternalRes/Lib/assimp;./ExternalRes/Lib/SDL2;./ExternalRes/Lib/SOIL;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>../ExternalRes/Include/assimp;../ExternalRes/Include/glm;../ExternalRes/Include/glew;../ExternalRes/Include/SOIL;../ExternalRes/Include/SDL2;$(IncludePath)</IncludePath>
+    <LibraryPath>../ExternalRes/Lib/glew;../ExternalRes/Lib/assimp;../ExternalRes/Lib/SDL2;../ExternalRes/Lib/SOIL;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
     </ClCompile>
+    <Link>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;opengl32.lib;glew32.lib;assimp-vc140-mt.lib;SOIL.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Console</SubSystem>
+    </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
@@ -82,6 +101,10 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
     </ClCompile>
+    <Link>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;opengl32.lib;glew32.lib;assimp-vc140-mt.lib;SOIL.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Console</SubSystem>
+    </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
@@ -110,6 +133,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Game.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Window.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Common.h" />
+    <ClInclude Include="Game.h" />
+    <ClInclude Include="Window.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -1,0 +1,12 @@
+﻿Game.obj : error LNK2019: unresolved external symbol _SDL_PollEvent referenced in function "public: void __thiscall Game::Update(void)" (?Update@Game@@QAEXXZ)
+Window.obj : error LNK2019: unresolved external symbol _SDL_CreateWindow referenced in function "public: void __thiscall Window::InitWindow(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >)" (?InitWindow@Window@@QAEXV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z)
+Window.obj : error LNK2019: unresolved external symbol _SDL_GL_SetAttribute referenced in function "public: void __thiscall Window::InitWindow(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >)" (?InitWindow@Window@@QAEXV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z)
+Window.obj : error LNK2019: unresolved external symbol _SDL_GL_CreateContext referenced in function "public: void __thiscall Window::InitWindow(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >)" (?InitWindow@Window@@QAEXV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z)
+Window.obj : error LNK2019: unresolved external symbol _SDL_GL_SwapWindow referenced in function "public: void __thiscall Window::SwapBuffers(void)" (?SwapBuffers@Window@@QAEXXZ)
+Window.obj : error LNK2019: unresolved external symbol _SDL_Init referenced in function "public: void __thiscall Window::InitWindow(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >)" (?InitWindow@Window@@QAEXV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z)
+MSVCRTD.lib(exe_main.obj) : error LNK2019: unresolved external symbol _main referenced in function "int __cdecl invoke_main(void)" (?invoke_main@@YAHXZ)
+./ExternalRes/Lib/SDL2\SDL2.lib : warning LNK4272: library machine type 'x64' conflicts with target machine type 'X86'
+./ExternalRes/Lib/SDL2\SDL2main.lib : warning LNK4272: library machine type 'x64' conflicts with target machine type 'X86'
+./ExternalRes/Lib/assimp\assimp-vc140-mt.lib : warning LNK4272: library machine type 'x64' conflicts with target machine type 'X86'
+./ExternalRes/Lib/SOIL\SOIL.lib : warning LNK4272: library machine type 'x64' conflicts with target machine type 'X86'
+C:\Users\gabri\OneDrive\Documents\GitHub\Chinchilla\Chinchilla\Debug\Chinchilla.exe : fatal error LNK1120: 7 unresolved externals
