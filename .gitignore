@@ -11,19 +11,11 @@
 # Compiled Dynamic libraries
 *.so
 *.dylib
-*.dll
 
 # Fortran module files
 *.mod
 
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
 # Executables
-*.exe
 *.out
 *.app
 
@@ -48,6 +40,11 @@
 .TemporaryItems
 .Trashes
 .VolumeIcon.icns
+.db
+.opendb
+*.db
+*.VC.db
+*.opendb
 
 # Directories potentially created on remote AFP share
 .AppleDB
@@ -77,3 +74,5 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+*.db
+Chinchilla/Chinchilla.VC.db
